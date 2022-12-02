@@ -7,7 +7,7 @@
     <title>WhatsAppWeb</title>
     <link rel="stylesheet" href="still.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
+    <script src="script.js"></script>
 
 </head>
 
@@ -18,7 +18,7 @@
     <div class="leftSide">
         <div class="header">
             <div class="userImg">
-                <img src="user.jpg" class="cover">
+                <img src="user.jpg" class="cover" id="firstProfilesPhoto">
             </div>
             <ul class="nav_icons">
                 <li><i class="fa-solid fa-circle"></i></li>
@@ -35,7 +35,7 @@
         
         
         <div class="chatList">
-            <div class="block active">
+            <div class="block active" onclick="imageChange(this)" id="parents">
                 <div class="imgBox">
                     <img src="user.png" alt="" class="cover">
                 </div>
@@ -50,13 +50,17 @@
                 </div>
             </div>
 
-            <div class="block unread">
+
+
+            <div class="block unread ocevent" onclick="textChange(this-2)">
                 <div class="imgBox">
-                    <img src="user2.jpeg" alt="" class="cover">
+                    <img src="pp-2.jpg" alt="" class="cover">
                 </div>
-                <div class="details">
+                <div class="details">s
                     <div class="listHead">
-                        <h4>Lorem.</h4>
+                        <div class="currentText">
+                            <h4>Barış</h4>
+                        </div>
                         <p>13.41</p>
                     </div>
                     <div class="message_p">
@@ -65,6 +69,8 @@
                     </div>
                 </div>
             </div>
+
+
 
             <div class="block unread">
                 <div class="imgBox">
@@ -296,8 +302,11 @@
     </div>
     <div class="rightSide">
         <div class="header">
-            <div class="userImg">
+            <div class="userImg" id="currentUserImage">
                 <img src="user.jpg" class="cover">
+            </div>
+            <div class="currentText">
+                <h4>Celal</h4>
             </div>
             <ul class="nav_icons">
                 <li><i class="fa-solid fa-circle"></i></li>
